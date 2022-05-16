@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Personnalisation de la NAV */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav .profile {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+nav .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+nav .profile h1 {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+/* --- A FINIR --- */
+/* nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+nav ul li {
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+
+nav ul li:hover {
+    border-bottom-color: #000;
+    color: #e04700;
+} */
+/* --------------------------------------------- */
+
+/* Personnalisation de la présentation du profil */
+.page-content {
+    margin: 4%;
+}
+
+.page-content header {
+    margin-top: 5%;
+    max-width: 80%;
+}
+
+.page-content header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5vw;
+}
+
+.page-content header p {
+    margin-top: 3%;
+    line-height: 30px;
+    color: #818181;
+}
+/* -------------------------------------------- */
+
+/* Personnalisation de l'image de présentation' */
+.page-content .presentation-image {
+    margin-top: 3%;
+}
+
+.page-content .presentation-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+section h1 {
+    margin: 4%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+/* --------------------------------------------- */
+
+/* Partie des compétences */
+.skill {
+    display: flex;
+    border: 2px solid #9da2ad;
+    border-radius: 30px;
+    margin: 4%;
+    padding: 64px;
+}
+
+/* Mise en place des noms de compétences en colonne */
+.skill .name {
+    display: flex;
+    flex-direction: column;
+    color: #6d7587;
+    font-size: 2vw;
+    font-weight: 500;
+    margin-right: 40px;
+    width: 30%;
+}
+
+/* Mise en place d'une ombre extérieur*/
+.skill .name span {
+    margin: 15px 0;
+    box-shadow: 9.91px 9.91px 15px #d9dade,
+        -9.91px -9.91px 15px #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 50px;
+    border: 5px solid #ebecf0;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* Mise en place d'une ombre intérieur au survol de la souris sur le nom de compétence */
+.skill .name span:hover {
+    color: #e04700;
+    box-shadow: 9.91px 9.91px 15px #d9dade,
+        -9.91px -9.91px 15px #ffffff,
+        inset 9.91px 9.91px 15px #d9dade, inset -9.91px -9.91px 15px #ffffff;
+}
+
+/* Mise en place de la barre de compétence en colonne */
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.bar {
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    box-shadow: inset 6px 6px 6px #d9dade, inset
+        -6px -6px 6px #ffffff;
+}
+
+/* Création d'un mode linéaire de couleur pour la progression de la barre */
+.bar .progress {
+    height: 100%;
+    background: linear-gradient(to right, #ffc400,#e04700 );
+    border-radius: 20px;
+}
+
+/* Attribution d'un pourcentage pour chaque compétence */
+:nth-child(1) .progress {
+    width: 85%;
+}
+
+:nth-child(2) .progress {
+    width: 85%;
+}
+
+:nth-child(3) .progress {
+    width: 80%;
+}
+
+:nth-child(4) .progress {
+    width: 70%;
+}
+
+:nth-child(5) .progress {
+    width: 10%;
+}
+
+:nth-child(6) .progress {
+    width: 85%;
+}
+
+:nth-child(7) .progress {
+    width: 85%;
+}
+
+:nth-child(8) .progress {
+    width: 75%;
+}
+
+:nth-child(9) .progress {
+    width: 90%;
+}
+/* --------------------------------------------- */
+
+/* FOOTER */
+footer .text-center{
+    max-width: 100%;
+}
+/* --------------------------------------------- */
+
+/* RESPONSIVE */
+@media screen and (max-width: 1180px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .page-content header {
+        margin-top: 10%;
+        max-width: 100%;
+    }
+}
+
